@@ -15,7 +15,7 @@
 void disp(node* head);
  int main()
  {
-	 cout<<"\n\t Date: 7 May,2018 \t\t\t\t Name: Furqan Ali \t\t\t\t Reg: 170401027 \n";
+	 cout<<"\n Name: Furqan Ali \n";
  node *head=NULL;
  int data,position,ch;
 while(1)
