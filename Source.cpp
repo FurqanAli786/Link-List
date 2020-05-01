@@ -15,7 +15,6 @@
 void disp(node* head);
  int main()
  {
-	 cout<<"\n Name: Furqan Ali \n";
  node *head=NULL;
  int data,position,ch;
 while(1)
@@ -64,10 +63,9 @@ while(1)
 		 cout<<"\n Wrong Choice!!! ";
 	 }
 }
-
  getch();
  }
-
+										//First Function Defination
  node *emplist(node* head,int data)
  {
  node *tmp;
@@ -78,7 +76,7 @@ while(1)
 head=tmp;
 return head;
  }
-
+										//Second Function Defination
  node *beg(node* head,int data)
  {
  node *tmp;
@@ -86,11 +84,11 @@ return head;
  tmp->info=data;
  tmp->prev=NULL;
  tmp->next=head;			//Problem
- head->prev=tmp;
+ head->prev=tmp;			//Solved
  head=tmp;
  return head;
  }
-
+									//Second Function 
  node *end(node* head,int data)
  {
  node *p,*tmp;
@@ -106,7 +104,7 @@ return head;
  tmp->prev=p;
  return head;
  }
-
+																					//Third Function
  node *nposition(node* head,int data,int position)
  {
  node *tmp,*p;
@@ -144,7 +142,7 @@ p=p->next;
  return head;
  }
  }
- 
+								//Display Function
  void disp(node* head)
  {
  node *p;
@@ -154,11 +152,11 @@ p=p->next;
  else
  {
  p=head;
- cout<<"\n List::\n "<<endl;
+ cout<<"\n List::"<<endl;
  }
  while(p!=NULL)
  {
- cout<<p->info<<"\t";
+ cout<<p->info<<" ";
  p=p->next;
  }
  cout<<endl;
